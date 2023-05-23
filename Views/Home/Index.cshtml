@@ -1,0 +1,9 @@
+﻿@{
+    ViewData["Title"] = "Index";
+}
+@for(int i = 0; i < ViewBag.ListP.Count;i++)
+{
+    <a href='@Url.Action("detallePais", new {Paises = ViewBag.ListP[i].Nombre})'><img src="/@ViewBag.ListP[i].ImgBandera" width="284" height="177"></a>
+    
+}
+
